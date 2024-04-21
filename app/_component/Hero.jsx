@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white flex flex-col items-center ">
   <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex ">
     <div className="mx-auto max-w-xl text-center">
       <h1 className="text-3xl font-extrabold sm:text-5xl pb-1">
@@ -26,7 +27,9 @@ const Hero = () => {
         
       </div>
     </div>
+    
   </div>
+  <Image className='flex items-center justify-center mt-5 rounded-xl sm:border-2 p-5 sm:p-0 ' src={'/dashboard.png'} width={1000} height={700} alt='dashboard'/>
 </section>
   )
 }
